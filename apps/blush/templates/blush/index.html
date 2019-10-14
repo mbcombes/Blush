@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blush</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'blush/css/bootstrap.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/0485231d9b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'blush/css/style.css' %}">
+    <script src="{% static 'blush/js/script.js' %}"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href='#top'><img class="logo" src="{% static 'blush/img/blush5.png' %}" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#top">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#connect">Connect</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- image slider -->
+    <a id="top"></a>
+    <div id="slides" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#slides" data-slide-to="0" class="active"></li>
+            <li data-target="#slides" data-slide-to="1"></li>
+            <li data-target="#slides" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{% static 'blush/img/brush-narrow.jpg' %}" alt="img1">
+                <!-- <div class="carousel-caption">
+                    <h1 class="display-2">Blush</h1>
+                    <h3>Hair & Makup</h3>
+                </div> -->
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'blush/img/brush-narrow.jpg' %}" alt="img2">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'blush/img/alysa-bajenaru-88IV5AtWjB8-unsplash smaller.jpg' %}" alt="img3">
+            </div>
+        </div>
+    </div>
+    <!-- jumbotron -->
+    <div class="container-fluid">
+        <div class="jumbotron row">
+            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+                <p class="lead">Click here to see our stylists and contact us to schedule an appointment.</p>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+                <a href="#" class="btn btn-outline-secondary btn-lg">More Info</a>
+            </div>
+            <a id="services"></a>
+        </div>
+    </div>
+    <!-- Welcome Services -->
+    <div class="container-fluid padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h1 class="display-4">Services</h1>
+            </div>
+            <hr class="line">
+            <div class="col-12">
+                <p class="lead">Our stylists here at Blush offer a variety of services. Listed below are a some of the
+                    services that our stylist offer. If you are looking for something that isn't listed, give us a call
+                    and one of our professionals will help you!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- three coumn section -->
+    <div class="container-fluid padding">
+        <div class="row text-center padding">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <h3>Cuts</h3>
+                <p>We have professionals to meet all your haircut needs. Bring in the whole family!</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <h3>Colors</h3>
+                <p>Need a change? Or maybe want to try something crazy? Or did you get a bad color and need some help
+                    fixing it? We have a stylist for all your hair coloring needs.</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <h3>Special Events & Weddings</h3>
+                <p>Need your hair and makeup done for your Wedding? Want to look amazing for your homecoming dance? We
+                    can help! Many of our stylists can help to make your day perfect and stress free!</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <h3>Specialized Treatments</h3>
+                <p>From brow waxing, hair masks, or even a brazilian blowout, our professionals can meet your every
+                    need!</p>
+            </div>
+        </div>
+        <hr class="my-4">
+    </div>
+
+    <!-- Two Column Section -->
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-lg-6">
+                <h2 class="mb-3">Walk-ins are welcome!</h2>
+                <p>We are located in historic down town Sand Springs. Come check out our beautiful downtown shops and
+                    restarants and drop in for a visit. We would love to meet your hair and beauty needs that day, or
+                    get you scheduled for a time that works best for you!</p>
+                <p>While you are here you can check out our sister company Rose Anne Adoring Boutique that is located in
+                    the front of our salon! They have a ton of cute clothes, jewelry, and season items perfect just for
+                    you!</p>
+                <a href="#connect" class="btn btn-primary">Location</a>
+            </div>
+            <div class="col-lg-6">
+                <img src="{% static 'blush/img/storefront1.jpg' %}" alt="Example" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <!-- fixed image -->
+    <!-- <figure>
+        <div class="fixed-wrap">
+            <div id="fixed">
+
+            </div>
+        </div>
+    </figure> -->
+    <!-- hidden sectioin -->
+    <button class="fun" data-toggle="collapse" data-target="#emoji">Click for prices</button>
+    <div id="emoji" class="collapse">
+        <div class="container-fluid padding">
+            <div class="row text-center">
+                <div class="col-sm-6 col-md-3">
+                    <img class="gif" src="{% static 'blush/img/BlushLogo.png' %}" alt="1">
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img class="gif" src="{% static 'blush/img/BlushLogo.png' %}" alt="1">
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img class="gif" src="{% static 'blush/img/BlushLogo.png' %}" alt="1">
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img class="gif" src="{% static 'blush/img/BlushLogo.png' %}" alt="1">
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="team"></a>
+    <!-- meet the team -->
+    <div class='container-fluid padding'>
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h1 class="dixplay-1">Meet the Team</h1>
+            </div>
+            <hr class="line">
+        </div>
+    </div>
+    <!--  cards -->
+    <div class='container-fluid padding row'>
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="{% static 'blush/img/Leasha.jpg'%}">
+                <div class="card-body">
+                    <h4 class="card-title">Leasha Combes</h4>
+                    <p class="card-text">Leasha Combes specializes in cuts, extensions, and corrective color.</p>
+                    <a href="/stylists" class="btn btn-outline-secondary">See examples of work!</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="">
+                <div class="card-body">
+                    <h4 class="card-title">Another Stylist</h4>
+                    <p class="card-text">Info about stylist</p>
+                    <a href="" class="btn btn-outline-secondary">See examples of work!</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="">
+                <div class="card-body">
+                    <h4 class="card-title">Someone Else</h4>
+                    <p class="card-text">Info about stylist</p>
+                    <a href="" class="btn btn-outline-secondary">See examples of work!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="about"></a>
+    <hr>
+    <!-- two column -->
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-lg-6">
+                <img src="{% static 'blush/img/Stylists.jpg' %}" alt="Example" class="img-fluid">
+            </div>
+            <div class="col-lg-6">
+                <h2>Our Philosophy</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis inventore beatae cum voluptatum
+                    cupiditate voluptas perspiciatis quos odio quam animi incidunt at laborum qui iusto, deleniti quasi
+                    rerum, illum reprehenderit!</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero aut, sequi sint odit magni, quasi
+                    sit unde officia corporis saepe harum quod reiciendis accusamus labore, cum tempora? Quibusdam, ex
+                    recusandae.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi consectetur, quo nam laboriosam,
+                    veritatis hic quos esse enim architecto aliquam et labore praesentium ducimus neque officiis sunt
+                    tenetur illum laborum.</p>
+            </div>
+            <hr class="my-4">
+        </div>
+        <!-- Connect -->
+        <div class="col-12 social padding text-center">
+            <a href="https://www.facebook.com/Blush-hair-and-makeup-lounge-1410475419254882/"><i
+                    class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/explore/locations/650942436/blush-hair-and-makeup-lounge/"><i
+                    class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <footer>
+        <div id="connect" class="container-fluid padding">
+            <img class="mx-auto d-block" src="{% static 'blush/img/blush4.png' %}" alt="logo">
+            <div class="row text-center">
+                <div class="col-md-6">
+                    <hr class="light">
+                    <h5>Our Hours</h5>
+                    <hr class="light">
+                    <p>Monday: 9 am - 5pm</p>
+                    <p>Tuesday: 9 am - 5pm</p>
+                    <p>Wednesday: 9 am - 5pm</p>
+                </div>
+                <div class="col-md-6">
+                    <hr class="light">
+                    <h5>Contact Information</h5>
+                    <hr class="light">
+                    <p>555-555-5555</p>
+                    <p>email@email.com</p>
+                    <p>100 street name</p>
+                    <p>Sand Springs, OK, 74063</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <hr class="light-100">
+            <h5>&copy; Blush created by Mason Combes</h5>
+            <h5>Created my free logo at <a href="https://logomakr.com/">LogoMakr.com</a></h5>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
