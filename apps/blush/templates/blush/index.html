@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Blush</title>
     {% load static %}
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'blush/img/Logo2.png' %}" />
     <link rel="stylesheet" href="{% static 'blush/css/bootstrap.css' %}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -33,14 +34,15 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#top">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
+                    
                     <li class="nav-item">
                         <a class="nav-link" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#connect">Connect</a>
@@ -77,10 +79,11 @@
     <div class="container-fluid">
         <div class="jumbotron row">
             <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
-                <p class="lead">Click here to see our stylists and contact us to schedule an appointment.</p>
+                <p class="lead">Welcome to Blush! Explore our site to find out more about us! If you would like to
+                    schedule an appointment, select a stylist below to book!</p>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
-                <a href="#" class="btn btn-outline-secondary btn-lg">More Info</a>
+                <a href="#team" class="btn btn-outline-secondary btn-lg">Stylists</a>
             </div>
             <a id="services"></a>
         </div>
@@ -130,14 +133,15 @@
     <div class="container-fluid padding">
         <div class="row padding">
             <div class="col-lg-6">
-                <h2 class="mb-3">Walk-ins are welcome!</h2>
+                <h2 class="mb-3 display-4">Walk-ins are welcome!</h2>
                 <p>We are located in historic down town Sand Springs. Come check out our beautiful downtown shops and
                     restarants and drop in for a visit. We would love to meet your hair and beauty needs that day, or
                     get you scheduled for a time that works best for you!</p>
                 <p>While you are here you can check out our sister company Rose Anne Adoring Boutique that is located in
                     the front of our salon! They have a ton of cute clothes, jewelry, and season items perfect just for
                     you!</p>
-                <a href="#connect" class="btn btn-primary">Location</a>
+                <a href="https://www.google.com//maps/dir//blush+sand+springs/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x87b6c0f7e1b5b573:0xa6b779318d0f97aa?sa=X"
+                    class="btn btn-primary">Take Me There Now</a>
             </div>
             <div class="col-lg-6">
                 <img src="{% static 'blush/img/storefront1.jpg' %}" alt="Example" class="img-fluid">
@@ -145,53 +149,21 @@
         </div>
     </div>
 
-    <!-- fixed image -->
-    <!-- <figure>
-        <div class="fixed-wrap">
-            <div id="fixed">
-
-            </div>
-        </div>
-    </figure> -->
-    <!-- hidden sectioin -->
-    <button class="fun" data-toggle="collapse" data-target="#emoji">Click for prices</button>
-    <div id="emoji" class="collapse">
-        <div class="container-fluid padding">
-            <div class="row text-center">
-                <div class="col-sm-6 col-md-3">
-                    <img class="gif" src="{% static 'blush/img/BlushLogo.png' %}" alt="1">
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <img class="gif" src="{% static 'blush/img/BlushLogo.png' %}" alt="1">
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <img class="gif" src="{% static 'blush/img/BlushLogo.png' %}" alt="1">
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <img class="gif" src="{% static 'blush/img/BlushLogo.png' %}" alt="1">
-                </div>
-            </div>
-        </div>
-    </div>
     <a id="team"></a>
     <!-- meet the team -->
-    <div class='container-fluid padding'>
-        <div class="row welcome text-center">
-            <div class="col-12">
-                <h1 class="dixplay-1">Meet the Team</h1>
-            </div>
-            <hr class="line">
+    <!-- fixed image -->
+    <div class="container-fluid padding row" id="fixed">
+        <div class="text-center col-12 pt-5">
+            <h1 class="display-3 card pt-2">Meet the Team</h1>
         </div>
-    </div>
-    <!--  cards -->
-    <div class='container-fluid padding row'>
-        <div class="col-md-4">
+        <div class="col-md-4 mb-3">
             <div class="card">
                 <img class="card-img-top" src="{% static 'blush/img/Leasha.jpg'%}">
                 <div class="card-body">
                     <h4 class="card-title">Leasha Combes</h4>
-                    <p class="card-text">Leasha Combes specializes in cuts, extensions, and corrective color.</p>
-                    <a href="/stylists" class="btn btn-outline-secondary">See examples of work!</a>
+                    <p class="card-text">Leasha Combes specializes in cuts, extensions, and corrective
+                        color.</p>
+                    <a href="/stylists" class="btn btn-outline-secondary">More Info!</a>
                 </div>
             </div>
         </div>
@@ -216,11 +188,12 @@
             </div>
         </div>
     </div>
+    <!-- meet the team -->
+
     <a id="about"></a>
-    <hr>
     <!-- two column -->
-    <div class="container-fluid padding">
-        <div class="row padding">
+    <div class="container-fluid padding pt-5">
+        <div class="row">
             <div class="col-lg-6">
                 <img src="{% static 'blush/img/Stylists.jpg' %}" alt="Example" class="img-fluid">
             </div>
@@ -242,7 +215,6 @@
         <div class="col-12 social padding text-center">
             <a href="https://www.facebook.com/Blush-hair-and-makeup-lounge-1410475419254882/"><i
                     class="fab fa-facebook"></i></a>
-            <a href=""><i class="fab fa-twitter"></i></a>
             <a href="https://www.instagram.com/explore/locations/650942436/blush-hair-and-makeup-lounge/"><i
                     class="fab fa-instagram"></i></a>
         </div>
@@ -256,26 +228,30 @@
                     <hr class="light">
                     <h5>Our Hours</h5>
                     <hr class="light">
-                    <p>Monday: 9 am - 5pm</p>
-                    <p>Tuesday: 9 am - 5pm</p>
-                    <p>Wednesday: 9 am - 5pm</p>
+                    <p>Tuesday: 10 am - 6pm</p>
+                    <p>Wednesday: 10 am - 6pm</p>
+                    <p>Thursday: 10 am - 6pm</p>
+                    <p>Friday: 10am - 6pm</p>
+                    <p>Saturday: 10am- 3pm</p>
+                    <p>Sunday: Closed</p>
+                    <p>Monday: Closed</p>
                 </div>
                 <div class="col-md-6">
                     <hr class="light">
                     <h5>Contact Information</h5>
                     <hr class="light">
-                    <p>555-555-5555</p>
-                    <p>email@email.com</p>
-                    <p>100 street name</p>
+                    <p>918-514-4629</p>
+                    <p>111 North Main Street</p>
                     <p>Sand Springs, OK, 74063</p>
+                    <a
+                        href="https://www.google.com//maps/dir//blush+sand+springs/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x87b6c0f7e1b5b573:0xa6b779318d0f97aa?sa=X">Directions</a>
                 </div>
             </div>
         </div>
-        <div class="col-12">
+        <div class="col-12 text-center">
             <hr class="light-100">
-            <h5>&copy; Blush created by Mason Combes</h5>
+            <h5>&copy; Blush created by <a href="https://www.linkedin.com/in/masoncombes/">Mason Combes</a></h5>
             <h5>Created my free logo at <a href="https://logomakr.com/">LogoMakr.com</a></h5>
-
         </div>
     </footer>
 

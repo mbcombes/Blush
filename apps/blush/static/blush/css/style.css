@@ -1,4 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo|Dancing+Script|Great+Vibes&display=swap');
 
+/* Fixed Background Image */
+
+#fixed {
+    margin: 0px;
+    background-image: url('./../img/PinkBricks.jpeg');
+    background-size: 100%;
+    background-attachment: fixed;
+    width: 100%;
+}
 /* Firefox Bug Fix */
 .carousel-item {
     transition: -webkit-transform 0.5s ease;
@@ -6,35 +16,6 @@
     transition: transform 0.5s ease, -webkit-transform 0.5s ease;
     -webkit-backface-visibility: visible;
     backface-visibility: visible;
-}
-/* Fixed Background Image */
-figrue {
-    position: relative;
-    width: 100%;
-    height: 60%;
-    margin: 0!important;
-}
-.fixed-wrap {
-    clip: rect(0,auto,0);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-#fixed {
-    background-image: url('./../img/brush-narrow.jpg');
-    position: fixed;
-    display: block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center center;
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
-    will-change: transform;
 }
 /* Bootstrap Padding Fix */
 [class*="col-"] {
@@ -44,7 +25,7 @@ figrue {
 html, body {
     height: 100%;
     width: 100%;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Arvo', serif;
     color: #222;
 }
 .navbar {
@@ -61,7 +42,7 @@ html, body {
     width: 50%;
 }
 .jumbotron {
-    background-color: #993955;
+    background-color: #E8B4BC;
     padding: 1rem;
     border-radius: 0;
 }
@@ -97,14 +78,9 @@ html, body {
 .padding{
     padding-bottom: 2rem;
 }
-.welcome{
-    width: 75%;
-    margin: 0 auto;
-    padding-top: 2rem;
-}
 .line {
     border-top: 2px solid #b4b4b4;
-    width: 95%;
+    width: 75%;
     margin-top: .3rem;
 }
 .fun{
@@ -164,7 +140,7 @@ hr.light-100{
 }
 
 .background-purple{
-    background-color: #993955;
+    background-color: #EDA3B0;
 }
 .gallery {
     height: 500px;
@@ -245,4 +221,13 @@ hr.light-100{
     .modal-content {
     width: 100%;
     }
+}
+.container {
+    background-color: #bbb;
+}
+.display-4{
+    font-family: 'Dancing Script', cursive;
+}
+.display-3{
+    font-family: 'Great Vibes', cursive;
 }
