@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Blush</title>
     {% load static %}
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'blush/img/Logo2.png' %}" />
     <link rel="stylesheet" href="{% static 'blush/css/bootstrap.css' %}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -25,9 +26,11 @@
         <div class="row">
             <div class="sidebar col-sm-12 col-md-4 col-lg-3">
                 <a href='/'><img class="img-fluid" src="{% static 'blush/img/blushdark.png' %}" alt="logo"></a>
+                <hr>
+                <h1 class="text-center display-4">Leasha Combes</h1>
                 <img src="{% static 'blush/img/Leasha.jpg'%}" alt="stylist" class="rounded img-fluid mt-3 mb-3">
-                <h1 class="text-center">Leasha Combes</h1>
-                <h2 class="text-center">Services</h1>
+
+                <h2 class="text-center display-4">Services</h1>
                     <hr class="line">
                     <div class="row pl-3">
                         <ul class="col-6 pt-0">
@@ -48,39 +51,64 @@
                         </ul>
                     </div>
             </div>
-            <div class="main col-sm-12 col-md-8 col-lg-9 p-0">
-                <h1 class="text-center display-2">Leasha's Work</h1>
+            <div class="main col-sm-12 col-md-8 col-lg-9">
+                <h1 class="text-center display-2 mt-3">Leasha's Work</h1>
                 <hr class="line">
                 <!-- Image Gallery -->
-                <div class="gallery row text-center">
-                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3"><img class="img-thumbnail"
-                            src="{% static '/blush/img/Leasha/1.jpg' %}" alt=""></div>
-                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3"><img class="img-thumbnail"
-                            src="{% static '/blush/img/Leasha/2.jpg' %}" alt=""></div>
-                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3"><img class="img-thumbnail"
-                            src="{% static '/blush/img/Leasha/3.jpg' %}" alt=""></div>
-                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3"><img class="img-thumbnail"
-                            src="{% static '/blush/img/Leasha/4.jpg' %}" alt=""></div>
-                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3"><img class="img-thumbnail"
-                            src="{% static '/blush/img/Leasha/5.jpg' %}" alt=""></div>
-                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3"><img class="img-thumbnail"
-                            src="{% static '/blush/img/Leasha/6.jpg' %}" alt=""></div>
-                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3"><img class="img-thumbnail"
-                            src="{% static '/blush/img/Leasha/7.jpg' %}" alt=""></div>
-                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3"><img class="img-thumbnail"
-                            src="{% static '/blush/img/Leasha/8.jpg' %}" alt=""></div>
-                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3"><img class="img-thumbnail"
-                            src="{% static '/blush/img/Leasha/9.jpg' %}" alt=""></div>
-                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3"><img class="img-thumbnail"
-                            src="{% static '/blush/img/Leasha/10.jpg' %}" alt=""></div>
-                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3"><img class="img-thumbnail"
-                            src="{% static '/blush/img/Leasha/11.jpg' %}" alt=""></div>
-                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3"><img class="img-thumbnail"
-                            src="{% static '/blush/img/Leasha/12.jpg' %}" alt=""></div>
-                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3"><img class="img-thumbnail"
-                            src="{% static '/blush/img/Leasha/13.jpg' %}" alt=""></div>
-                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3"><img class="img-thumbnail"
-                            src="{% static '/blush/img/Leasha/14.jpg' %}" alt=""></div>
+                <div class="gallery pl-3">
+                    <div class="gallery2 row text-center">
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3"><img class="img-thumbnail"
+                                src="{% static '/blush/img/Leasha/7_1.jpg' %}" alt=""></div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3"><img class="img-thumbnail"
+                                src="{% static '/blush/img/Leasha/7_2.jpg' %}" alt=""></div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3"><img class="img-thumbnail"
+                                src="{% static '/blush/img/Leasha/4_1.jpg' %}" alt=""></div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3"><img class="img-thumbnail"
+                                src="{% static '/blush/img/Leasha/4_2.jpg' %}" alt=""></div>
+                            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3"><img class="img-thumbnail"
+                                src="{% static '/blush/img/Leasha/9_1.jpg' %}" alt=""></div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3"><img class="img-thumbnail"
+                                src="{% static '/blush/img/Leasha/9_2.jpg' %}" alt=""></div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3"><img class="img-thumbnail"
+                                src="{% static '/blush/img/Leasha/6_1.jpg' %}" alt=""></div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3"><img class="img-thumbnail"
+                                src="{% static '/blush/img/Leasha/3_1.jpg' %}" alt=""></div> 
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3"><img class="img-thumbnail"
+                                src="{% static '/blush/img/Leasha/5_1.jpg' %}" alt=""></div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3"><img class="img-thumbnail"
+                                src="{% static '/blush/img/Leasha/8_1.jpg' %}" alt=""></div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3"><img class="img-thumbnail"
+                                src="{% static '/blush/img/Leasha/1_1.jpg' %}" alt=""></div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3"><img class="img-thumbnail"
+                                src="{% static '/blush/img/Leasha/1_2.jpg' %}" alt=""></div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3"><img class="img-thumbnail"
+                                src="{% static '/blush/img/Leasha/2_1.jpg' %}" alt=""></div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3"><img class="img-thumbnail"
+                                src="{% static '/blush/img/Leasha/10_1.jpg' %}" alt=""></div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3"><img class="img-thumbnail"
+                                src="{% static '/blush/img/Leasha/10_2.jpg' %}" alt=""></div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3"><img class="img-thumbnail"
+                                src="{% static '/blush/img/Leasha/11_1.jpg' %}" alt=""></div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3"><img class="img-thumbnail"
+                                src="{% static '/blush/img/Leasha/12_1.jpg' %}" alt=""></div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3"><img class="img-thumbnail"
+                                src="{% static '/blush/img/Leasha/13_1.jpg' %}" alt=""></div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3"><img class="img-thumbnail"
+                                src="{% static '/blush/img/Leasha/14_1.jpg' %}" alt=""></div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3"><img class="img-thumbnail"
+                                src="{% static '/blush/img/Leasha/15_1.jpg' %}" alt=""></div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3"><img class="img-thumbnail"
+                                src="{% static '/blush/img/Leasha/16_1.jpg' %}" alt=""></div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3"><img class="img-thumbnail"
+                                src="{% static '/blush/img/Leasha/17_1.jpg' %}" alt=""></div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3"><img class="img-thumbnail"
+                                src="{% static '/blush/img/Leasha/18_1.jpg' %}" alt=""></div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3"><img class="img-thumbnail"
+                                src="{% static '/blush/img/Leasha/19_1.jpg' %}" alt=""></div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3"><img class="img-thumbnail"
+                                src="{% static '/blush/img/Leasha/20_1.jpg' %}" alt=""></div>
+
+                    </div>
                 </div>
                 <div class="container-fluid text-center">
                     <h1 class="display-4 mt-4">Book Today!</h1>
@@ -90,7 +118,7 @@
                         Facebook using the link below.</p>
                     <p class="col-12">If you would like to book with Leasha, or set up a consultation, <a
                             href="https://square.site/book/HJ6VNRHCSYP43/leasha-at-blush-salon-sand-springs-ok">click
-                            here</a></p>
+                            here</a>!</p>
                 </div>
                 <div class="container-fluid row text-center">
                     <div class="col-12 social p-0">
